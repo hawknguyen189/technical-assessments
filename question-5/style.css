@@ -1,0 +1,25 @@
+div#slideshow {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+div#slideshow div.img {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+div#slideshow div.img.loading {
+  opacity: 0;
+}
